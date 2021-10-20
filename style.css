@@ -23,7 +23,7 @@ header {
 
 .inp input {
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
     background-color: transparent;
     padding: 10px;
     max-width: 60%;
@@ -31,9 +31,17 @@ header {
     float: left;
 }
 
+.inp input:hover {
+    border-bottom: 2px solid black;
+}
+
+.inp input:hover+.b {
+    border-bottom: 2px solid black;
+}
+
 .inp button {
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
     padding: 10px;
     height: 100%;
 }
@@ -93,4 +101,105 @@ main {
 .text p {
     margin: 0 !important;
     font-size: 15px;
+}
+
+.a {
+    background-color: #2573da;
+    color: white;
+}
+
+.nopadding:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(/assets/images/5.jpg);
+    color: #ffff;
+}
+
+.nopaddingg:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(/assets/images/6.jpg);
+    color: #ffff;
+}
+
+.nopadding {
+    background-image: url(/assets/images/5.jpg);
+    background-size: cover;
+    max-width: 200px;
+    transition: 0.5s ease-in-out;
+    min-height: 300px;
+    color: transparent;
+
+}
+
+.nopaddingg {
+    background-image: url(/assets/images/6.jpg);
+    transition: 0.5s ease-in-out;
+    background-size: cover;
+    max-width: 200px;
+    min-height: 300px;
+    color: transparent;
+
+}
+
+.carus img {
+    width: 100%;
+}
+
+footer {
+    background-color: #696969;
+}
+
+@media only screen and (max-width: 600px) {
+    .nopadding {
+        background-image: url(/assets/images/5.jpg);
+        background-size: cover;
+        max-width: 200px;
+        min-height: 200px;
+    }
+
+    .nopaddingg {
+        background-image: url(/assets/images/6.jpg);
+        background-size: cover;
+        max-width: 200px;
+        min-height: 200px;
+    }
+
+}
+
+.footer-left img {
+    max-width: 200px;
+    max-height: 250px;
+    float: left;
+}
+
+.footer-left a {
+    color: white;
+}
+
+.footer-right input {
+    background-color: transparent;
+    color: #ffff !important;
+    padding: 7px 40px;
+    outline: none;
+    border: 1px solid white;
+    width: 100%;
+}
+
+.footer-right button {
+    background-color: #2573da;
+    color: #ffff;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.footer-right input::placeholder {
+    color: white;
+}
+
+.footer-right {
+    color: #ffff;
+}
+
+#up {
+    cursor: pointer;
 }

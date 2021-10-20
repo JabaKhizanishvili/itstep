@@ -5,6 +5,11 @@
     font-family: 'Anton', sans-serif;
 }
 
+#banner {
+    background: url("../assets/images/1.webp") no-repeat center center;
+    background-size: cover;
+}
+
 header {
     background-color: #f2f2f2;
     width: 100%;
@@ -16,7 +21,7 @@ header {
     background-color: #f2f2f2;
 }
 
-#inp input {
+.inp input {
     border: none;
     border-bottom: 2px solid black;
     background-color: transparent;
@@ -26,16 +31,11 @@ header {
     float: left;
 }
 
-#inp button {
+.inp button {
     border: none;
     border-bottom: 2px solid black;
     padding: 10px;
     height: 100%;
-}
-
-#banner {
-    background: url("/assets/images/1.webp") no-repeat center center;
-    background-size: cover;
 }
 
 #banner h1 {
@@ -46,23 +46,19 @@ main {
     margin-top: 90px;
 }
 
-body {
-    height: 2000px;
-}
-
-#box {
+.box {
     position: relative;
     max-height: 300px;
     max-width: 350px;
     float: left;
 }
 
-#box img {
+.box img {
     float: left;
     width: 100%;
 }
 
-#box button {
+.box button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -72,4 +68,29 @@ body {
     color: rgb(93, 127, 172);
     padding: 15px 30px;
     background-color: #ffff;
+}
+
+.devider {
+    height: 50px;
+    width: 3px;
+    background-color: black;
+    float: left;
+}
+
+.prof {
+    max-height: 80px;
+    max-width: 130px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.prof i {
+    float: left;
+}
+
+
+
+.text p {
+    margin: 0 !important;
+    font-size: 15px;
 }
